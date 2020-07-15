@@ -9,7 +9,7 @@ const absencesController = new AbsencesController();
 
 routes.get('/members', membersController.index);
 
-routes.get('/abscences', absencesController.index);
+routes.get('/absences', absencesController.index);
 
 
 export default routes;

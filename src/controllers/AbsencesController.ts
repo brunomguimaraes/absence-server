@@ -10,7 +10,6 @@ class AbsencesController {
         const serializedAbsences= absences.map(absence => {
             return {
                 id: absence.id,
-           
             };
         });
 

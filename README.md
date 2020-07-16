@@ -30,3 +30,4 @@ Done! Just run dev mode next time, your sqlite3 db is now local
 
 * Add tests
 
+<blockquote class="imgur-embed-pub" lang="en" data-id="n6dTYpU"><a href="https://imgur.com/n6dTYpU">View post on imgur.com</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>

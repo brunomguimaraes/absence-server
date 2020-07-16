@@ -2,9 +2,9 @@ import { Request, Response } from 'express';
 import knex from '../db/connection';
 
 class MembersController {
-    async index (request: Request, response: Response) {
-        const members = await knex ('members').select('*');
-    
+    async index(request: Request, response: Response) {
+        const members = await knex('members').select('*');
+
         const serializedMembers = members.map(member => {
             return {
                 id: member.id,
@@ -14,9 +14,10 @@ class MembersController {
                 userId: member.userId
             };
         });
-    
+
         return response.json(serializedMembers);
     }
+
 }
 
 export default MembersController;

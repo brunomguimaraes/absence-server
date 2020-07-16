@@ -26,6 +26,20 @@ class AbsencesController {
 
         return response.json(serializedAbsences);
     }
+    
+    async show(request: Request, response: Response) {
+        const { userId } = request.params;
+
+        const member = await knex('members').where('userId', userId).first();
+
+        if (!member) {
+            return response.status(400).json({ message: 'Member not found' });
+        }
+
+        const absences = await knex('absences').select('*').where('userId', userId);
+
+        return response.json({ member, absences });
+    };
 }
 
 export default AbsencesController;

@@ -1,11 +1,7 @@
-import express, { Request, Response } from 'express';
-
-// import moment from 'moment';
-const ical = require('ical-generator');
+import { Request, Response } from 'express';
 import knex from '../db/connection';
 
 let fs = require('fs');
-const app = express();
 
 class CalendarController {
   async getCalendar(request: Request, response: Response) {

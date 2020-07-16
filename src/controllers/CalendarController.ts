@@ -23,6 +23,7 @@ class CalendarController {
           : "sick"}`,
       name: members.find(member => member.userId === absence.userId)!.name,
     }));
+    
     try {
       const icsFile = fs.createWriteStream('./temp/calendar.ics')
       icsFile.write('BEGIN:VCALENDAR\n');

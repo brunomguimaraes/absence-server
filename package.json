@@ -16,7 +16,7 @@
     "express": "^4.17.1",
     "ical-generator": "^1.11.0",
     "knex": "^0.21.1",
-    "moment": "^2.27.0",
+    "moment": "^2.29.2",
     "sqlite3": "^4.2.0"
   },
   "devDependencies": {
